@@ -28,13 +28,14 @@ f64 : Nombre flottant 64 bits
 bool : Booléen (true ou false)
 char : Caractère unicode ('a', 'é', etc.)
 
+```
 fn main() {
     let x = 5; // variable immuable
     let mut y = 10; // variable mutable
     y += 5;
     println!("x = {}, y = {}", x, y);
 }
-
+ ```
 
 2. Fonctions et contrôle de flux
 Les fonctions en Rust sont définies avec le mot-clé fn. Voici comment écrire une fonction avec des paramètres et un type de retour :
