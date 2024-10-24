@@ -1,3 +1,5 @@
+TEST
+
 0. Création d'un projet
 
 => Creation d'un projet
