@@ -6,11 +6,12 @@ TEST
 cargo new mon_projet
 cd mon_projet
 
-
+```
 mon_projet/
 ├── src/
 │   └── main.rs
 ├── Cargo.toml
+ ```
 
 => Compiler le projet 
 cargo build
@@ -39,17 +40,24 @@ fn main() {
 
 2. Fonctions et contrôle de flux
 Les fonctions en Rust sont définies avec le mot-clé fn. Voici comment écrire une fonction avec des paramètres et un type de retour :
+
+```
 fn main() {
     let result = addition(5, 3);
     println!("Résultat : {}", result);
 }
+```
 
+```
 fn addition(a: i32, b: i32) -> i32 {
     a + b // Retour implicite
 }
+```
 
 Contrôle de flux :
 Rust supporte les conditions avec if, les boucles avec loop, while, et for.
+
+```
 fn main() {
     let x = 10;
     if x > 5 {
@@ -62,10 +70,13 @@ fn main() {
         println!("i = {}", i);
     }
 }
+```
 
 3. Enums et structures (Stucts)
 Structs :
 Les structures en Rust permettent de regrouper des données sous une forme plus complexe.
+
+```
 struct Person {
     name: String,
     age: u8,
