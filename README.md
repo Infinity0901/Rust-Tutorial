@@ -2,7 +2,7 @@ Rust Tutorila
 
 # 0. Création d'un projet
 
-. Creation d'un projet :
+Creation d'un projet :
 
 ```
 cargo new mon_projet
@@ -16,23 +16,23 @@ mon_projet/
 ├── Cargo.toml
 ```
 
-. Compiler le projet 
+Compiler le projet 
 ```
 cargo build
 ```
 
 
-. Executer le projet
+Executer le projet
 ```
 cargo run
 ```
-# 1. Variables et types de données
+# 1. Variables et types de données : 
 
 En Rust, les variables sont immuables par défaut, c'est-à-dire qu'elles ne peuvent pas être modifiées après leur déclaration, sauf si tu utilises mut.
 
 Types de données courants :
 
-    i32 : Entier 32 bits (par défaut)
+* i32 : Entier 32 bits (par défaut)
 
 * f64 : Nombre flottant 64 bits
 
@@ -49,7 +49,8 @@ fn main() {
 }
  ```
 
-2. Fonctions et contrôle de flux
+# 2. Fonctions et contrôle de flux: 
+
 Les fonctions en Rust sont définies avec le mot-clé fn. Voici comment écrire une fonction avec des paramètres et un type de retour :
 
 ```
@@ -66,6 +67,7 @@ fn addition(a: i32, b: i32) -> i32 {
 ```
 
 Contrôle de flux :
+
 Rust supporte les conditions avec if, les boucles avec loop, while, et for.
 
 ```
@@ -83,9 +85,10 @@ fn main() {
 }
 ```
 
-3. Enums et structures (Stucts)
+# 3. Enums et structures (Stucts) :
 
 Structs :
+
 Les structures en Rust permettent de regrouper des données sous une forme plus complexe.
 
 ```
@@ -104,6 +107,7 @@ fn main() {
 ```
 
 Enums :
+
 Les enums permettent de définir un type pouvant avoir plusieurs valeurs distinctes.
 ```
 enum Direction {
@@ -122,7 +126,8 @@ fn main() {
 }
 ```
 
-4. Gestion des erreurs
+# 4. Gestion des erreurs : 
+
 Rust utilise le type Result<T, E> pour gérer les erreurs, ce qui permet une gestion explicite des erreurs au lieu d'utiliser des exceptions.
 
 ```
@@ -142,10 +147,13 @@ fn main() {
 }
 ```
 
-5. Propriétés et emprunts
+# 5. Propriétés et emprunts : 
+
+
 L'une des particularités de Rust est son système de propriété et d'emprunt qui permet une gestion fine de la mémoire, tout en évitant des erreurs classiques de gestion de pointeurs.
 
 Propriété :
+
 Quand une variable est assignée à une autre, la propriété des données est transférée, et la première variable ne peut plus être utilisée.
 
 ```
@@ -174,9 +182,10 @@ fn print_string(s: &String) {
 }
 ```
 
-6. Concurrence 
+# 6. Concurrence 
 
 Rust facilite la gestion de la concurrence grâce à son système de threads sûrs.
+
 La Concurrence en Rust est un aspect puissant et flexible du langage, conçu pour permettre l'exécution parallèle ou simultanée de tâches de manière sécurisée. 
 
 ```
@@ -193,7 +202,7 @@ fn main() {
 }
 ```
 
-7. Appel de fonction : 
+# 7. Appel de fonction : 
 
 function.rs
 ```
