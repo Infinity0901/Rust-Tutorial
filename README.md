@@ -32,7 +32,7 @@ En Rust, les variables sont immuables par défaut, c'est-à-dire qu'elles ne peu
 
 Types de données courants :
 
-- i32 : Entier 32 bits (par défaut)
+    i32 : Entier 32 bits (par défaut)
 
 * f64 : Nombre flottant 64 bits
 
