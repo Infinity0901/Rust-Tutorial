@@ -89,6 +89,7 @@ fn main() {
     };
     println!("Nom : {}, Âge : {}", person.name, person.age);
 }
+```
 
 Enums :
 Les enums permettent de définir un type pouvant avoir plusieurs valeurs distinctes.
