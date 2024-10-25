@@ -1,6 +1,6 @@
-TEST
+Rust Tutorila
 
-0. Création d'un projet
+# 0. Création d'un projet
 
 => Creation d'un projet
 cargo new mon_projet
