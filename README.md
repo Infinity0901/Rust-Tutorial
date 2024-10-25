@@ -1,6 +1,10 @@
-Rust Tutorila
+Rust Tutoriel
 
 # 0. Création d'un projet
+Installer Rust : 
+
+https://www.rust-lang.org/fr/tools/install
+
 
 Creation d'un projet :
 
