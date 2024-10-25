@@ -2,32 +2,43 @@ Rust Tutorila
 
 # 0. Création d'un projet
 
-## Creation d'un projet
+. Creation d'un projet :
+
+```
 cargo new mon_projet
 cd mon_projet
+```
 
 ```
 mon_projet/
 ├── src/
 │   └── main.rs
 ├── Cargo.toml
- ```
+```
 
-=> Compiler le projet 
+. Compiler le projet 
+```
 cargo build
+```
 
 
-=> Executer le projet
+. Executer le projet
+```
 cargo run
-
-1. Variables et types de données
+```
+# 1. Variables et types de données
 
 En Rust, les variables sont immuables par défaut, c'est-à-dire qu'elles ne peuvent pas être modifiées après leur déclaration, sauf si tu utilises mut.
+
 Types de données courants :
-i32 : Entier 32 bits (par défaut)
-f64 : Nombre flottant 64 bits
-bool : Booléen (true ou false)
-char : Caractère unicode ('a', 'é', etc.)
+
+ . i32 : Entier 32 bits (par défaut)
+
+ . f64 : Nombre flottant 64 bits
+
+ . bool : Booléen (true ou false)
+ 
+ .char : Caractère unicode ('a', 'é', etc.)
 
 ```
 fn main() {
