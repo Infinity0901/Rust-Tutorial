@@ -73,6 +73,7 @@ fn main() {
 ```
 
 3. Enums et structures (Stucts)
+
 Structs :
 Les structures en Rust permettent de regrouper des données sous une forme plus complexe.
 
@@ -93,6 +94,7 @@ fn main() {
 
 Enums :
 Les enums permettent de définir un type pouvant avoir plusieurs valeurs distinctes.
+```
 enum Direction {
     North,
     South,
@@ -107,9 +109,12 @@ fn main() {
         _ => println!("Autre direction."),
     }
 }
+```
 
 4. Gestion des erreurs
 Rust utilise le type Result<T, E> pour gérer les erreurs, ce qui permet une gestion explicite des erreurs au lieu d'utiliser des exceptions.
+
+```
 fn division(a: i32, b: i32) -> Result<i32, String> {
     if b == 0 {
         Err(String::from("Division par zéro"))
@@ -124,6 +129,7 @@ fn main() {
         Err(e) => println!("Erreur : {}", e),
     }
 }
+```
 
 5. Propriétés et emprunts
 L'une des particularités de Rust est son système de propriété et d'emprunt qui permet une gestion fine de la mémoire, tout en évitant des erreurs classiques de gestion de pointeurs.
@@ -131,15 +137,20 @@ L'une des particularités de Rust est son système de propriété et d'emprunt q
 Propriété :
 Quand une variable est assignée à une autre, la propriété des données est transférée, et la première variable ne peut plus être utilisée.
 
+```
 fn main() {
     let s1 = String::from("hello");
     let s2 = s1; // s1 est déplacé
     // println!("{}", s1); // Erreur : s1 n'est plus valide
     println!("{}", s2);
 }
+```
 
 Emprunt :
+
 Les emprunts permettent de prêter une référence à une donnée sans en prendre la propriété.
+
+```
 fn main() {
     let s1 = String::from("hello");
     print_string(&s1);
@@ -150,10 +161,14 @@ fn main() {
 fn print_string(s: &String) {
     println!("{}", s);
 }
+```
 
 6. Concurrence 
+
 Rust facilite la gestion de la concurrence grâce à son système de threads sûrs.
 La Concurrence en Rust est un aspect puissant et flexible du langage, conçu pour permettre l'exécution parallèle ou simultanée de tâches de manière sécurisée. 
+
+```
 use std::thread;
 
 fn main() {
@@ -165,20 +180,24 @@ fn main() {
 
     handle.join().unwrap(); // Attendre que le thread se termine
 }
+```
 
 7. Appel de fonction : 
 
 function.rs
+```
 // pub signifie que c'est public
 pub fn ma_fonction() {
     println!("Salut depuis le module function!");
 }
-
+```
 
 main.rs
+```
 mod function;
 
 fn main() {
     function :: ma_fonction();
 }
+```
 
